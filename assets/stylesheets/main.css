@@ -77,18 +77,42 @@ body {
   Grid
   ========================================
 */
-.col-1-3 {
-  width: 33.33%;
+
+.col-1-3{
+  width:22.22%;
 }
-.col-2-3 {
+.col-2-3{
   width: 66.66%;
 }
+
+.col-3-3{
+  width: 22.22%;
+}
+
 .col-1-3,
-.col-2-3 {
+.col-2-3,
+.col-3-3{
   display: inline-block;
   vertical-align: top;
-
 }
+
+.container,
+.grid{
+  .col-1-3,
+  .col-2-3,
+  .col-3-3{
+  padding-left: 15px;
+  padding-right:15px;
+  margin: 0 auto;
+  width: 960px;
+ }
+}
+
+.container{
+  padding-left: 30px;
+  padding-right:  30px;
+}
+
 
 /*
   ========================================
@@ -104,14 +128,16 @@ body {
   clear: both;
 }
 .group {
-  clear: both;
+  clear: both;margin: 0 auto;
+  width: 960px;
   *zoom: 1;
 }
 
-*, .container {
+ .container {
   margin: 0 auto;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 30px;margin: 0 auto;
+  width: 960px;
+  padding-right: 30px;margin: 0 auto;
   width: 960px;
 }
 
