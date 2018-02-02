@@ -13,6 +13,15 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 
 /*	 HTML5 display-role reset for older browsers */
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
 
 /*
   ========================================
@@ -20,12 +29,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   ========================================
 */
 
+a {
+  color: #648880;
+  text-decoration: none;
+}
 a:hover {
   color: #a9b2b9;
 }
-a {
-  color: #648880;
+p a {
+  border-bottom: 1px solid #dfe2e5;
 }
+
 
 
 
@@ -34,6 +48,18 @@ a {
   Primary header
   ========================================
 */
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+
+.primary-nav {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
 
 
 
@@ -42,6 +68,16 @@ a {
   padding: 40px 0 22px 0;
   float: left;
 }
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  font-size: 48px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+}
+
+}
+
 
 /*
   ========================================
@@ -52,6 +88,26 @@ a {
 .hero {
   padding: 22px 80px 66px 80px;
 }
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+}
+.hero h2 {
+  font-size: 40px;
+}
+.hero p {
+  font-size: 30px;
+}
+.hero {
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
 
 /*
   ========================================
@@ -72,7 +128,7 @@ a {
 */
 
 h1, h3, h4, h5, p {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 }
 h1, h2, h3, h4 {
   color: #648880;
@@ -83,7 +139,7 @@ h1 {
   line-height: 44px;
 }
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   line-height: 44px;
 }
 h3 {
@@ -93,10 +149,12 @@ h4 {
   font-size: 18px;
 }
 h5 {
-  color: 	#0000FF;
+  color: #a9b2b9;
   font-size: 14px;
   font-weight: 400;
+  text-transform: uppercase;
 }
+
 strong {
   font-weight: 400;
 }
@@ -105,15 +163,19 @@ cite, em {
 }
 
 
+
+
 /*
   ========================================
   Custom styles
   ========================================
 */
 body {
-  color: 	#000000;
-  font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+                  
 
 /*
   ========================================
@@ -155,6 +217,8 @@ body {
   padding-left: 30px;
   padding-right:  30px;
 }
+
+
 
 
 /*
@@ -225,4 +289,14 @@ table {
 .primary-footer {
   padding-bottom: 44px;
   padding-top: 44px;
+}
+.primary-footer {
+  color: #648880;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
 }
